@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>App Clima</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"/>
+<!-- api -->
+      <link rel="stylesheet" href="leaflet/leaflet.css">
+  </head>
+  <body>
+        <div id="mapid"></div>
+
+
+    <div class="container">
+      <h1 class="tex-center">Consultando Clima Mediante AJAX</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <select class="form-control" id="select">
+              <option>Selecione una Ubicación</option>
+              <option value="scl">Santiago, de Chile </option>
+              <option value="ccp">Concepción,Región del Bio Bio </option>
+            </select>
+          </div>
+        </div>
+<div class="col-md-8 hidden=true id="escondido">
+<h2 id="resumen"></h2>
+<table class="table table-scriped">
+    <tr>
+        <td>Sensación Térmica</td>
+    <td id="sensacion"></td>
+    </tr>
+    <tr>
+            <td>Probabilidad de Lluvia</td>
+        <td id="sensacion"></td>
+        </tr>
+        <tr>
+                <td>Humedad Relatida</td>
+            <td id="sensacion"></td>
+            </tr>
+</table>
+
+</div>
+
+      </div>
+    </div>
+
+    <!-- JQuery 3.3.1 -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+      <!-- Api -->
+      <script type="text/javascript" src="leaflet/leaflet.js"></script>
+    <!-- archivo externo JS -->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
